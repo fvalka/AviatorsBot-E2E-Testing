@@ -1,5 +1,5 @@
 FROM python:3
-MAINTAINER office@vektorraum.com
+LABEL maintainer="aviatorsbot.com"
 WORKDIR /app
 
 COPY requirements.txt ./
