@@ -1,5 +1,5 @@
 import os
-
+import time
 from telethon import TelegramClient, sync
 
 
@@ -19,8 +19,10 @@ class TelegramE2EClient(object):
         def __init__(self):
             api_id = os.environ["TELEGRAM_API_ID"]
             api_hash = os.environ["TELEGRAM_API_HASH"]
-            self.client = TelegramClient('../secrets/telegram', api_id, api_hash)
+            self.client = TelegramClient('secrets/telegram', api_id, api_hash)
             self.client.start()
+            time.sleep(1)
+
 
     instance = None
 

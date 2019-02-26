@@ -38,7 +38,7 @@ class SubscriptionTestCase(unittest.TestCase, TelegramConversationInitializer):
             conv.send_message("/ls")
             self.assertNotIn("EDDM", conv.get_response().message)
 
-    def test_subscriptionSendsNewMessages(self):
+    def disabled_subscriptionSendsNewMessages(self):
         with self.initConvo() as conv:
             # Delete everything
             conv.send_message("/rm *")

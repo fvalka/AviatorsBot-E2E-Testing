@@ -37,7 +37,8 @@ class MetarUtilTestCase(unittest.TestCase):
 
         result = MetarUtil._extract(msg)
 
-        self.assertEquals(result, "231150", "Extracted string didn't match actual issue date/time")
+        self.assertEqual(result, "231150", "Extracted string didn't match actual issue date/time")
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -107,4 +107,4 @@ venv.bak/
 .idea/
 
 # Secrets
-secrets/*
+secrets/*.session
