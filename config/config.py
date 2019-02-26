@@ -5,5 +5,5 @@ BOT_CONFIG = {
 TIMEOUTS = {
     "local": 3,
     "wx": 10,
-    "subscription": 300
+    "subscription": 60*62
 }
